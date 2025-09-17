@@ -18,7 +18,7 @@ window {
     all: unset;
     padding: 20px;
     border-radius: 16px;
-    background-color: rgba(26, 18, 38, 0.97);
+    background-color: rgba(26, 18, 38, 1);
     background-image: linear-gradient(45deg, rgba(51, 204, 255, 0.12), rgba(0, 255, 153, 0.12));
 }
 #inner-box {
