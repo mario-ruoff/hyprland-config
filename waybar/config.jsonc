@@ -22,7 +22,6 @@
 		"custom/distro",
 		"custom/right_div#2",
 		"custom/right_inv#1",
-		"idle_inhibitor",
 		"clock#time",
 		"custom/right_div#3",
 		"clock#date",
@@ -41,6 +40,7 @@
 		"custom/left_div#8",
 		"battery",
 		"custom/left_inv#2",
+		"idle_inhibitor",
 		"custom/power_menu"
 	],
 
@@ -189,7 +189,7 @@
 
 	"clock#date": {
 		// "interval":
-		"format": "󰸗 {:%m-%d}",
+		"format": "{:%d. %b}",
 		// "timezone":
 		// "timezones":
 		// "locale":
@@ -627,7 +627,7 @@
 	},
 
 	"custom/power_menu": {
-		"format": "󰤄",
+		"format": "⏻",
 		"on-click": "kitty -e ~/.config/waybar/scripts/power-menu.sh",
 		"tooltip": false
 	},

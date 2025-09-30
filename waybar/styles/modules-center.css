@@ -45,15 +45,13 @@
 	color: @main-bg;
 }
 
-/* idle inhibitor & time */
+/* time */
 
 #custom-right_inv.1 {
 	color: @time;
 }
-#idle_inhibitor {
-	background-color: @time;
-}
 #clock.time {
+	padding-left: 12px;
 	padding-right: 6px;
 	background-color: @time;
 }
