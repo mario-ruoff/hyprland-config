@@ -87,4 +87,5 @@
 }
 #custom-right_div.5 {
 	color: @tray;
+	margin-right: 50px;
 }

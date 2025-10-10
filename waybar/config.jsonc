@@ -22,23 +22,23 @@
 		"custom/distro",
 		"custom/right_div#2",
 		"custom/right_inv#1",
-		"clock#time",
+		"battery",
 		"custom/right_div#3",
-		"clock#date",
+		"backlight",
 		"custom/right_div#4",
-		"network",
-		"bluetooth",
-		"custom/system_update",
+		"group/pulseaudio",
 		"custom/right_div#5"
 	],
 	"modules-right": [
 		"mpris",
 		"custom/left_div#6",
-		"group/pulseaudio",
+		"network",
+		"bluetooth",
+		"custom/system_update",
 		"custom/left_div#7",
-		"backlight",
+		"clock#date",
 		"custom/left_div#8",
-		"battery",
+		"clock#time",
 		"custom/left_inv#2",
 		"idle_inhibitor",
 		"custom/power_menu"
@@ -356,7 +356,7 @@
 		],
 		"drawer": {
 			// "transition-duration":
-			"transition-left-to-right": false
+			"transition-left-to-right": true
 			// "children-class":
 			// "click-to-reveal":
 		}
@@ -481,7 +481,7 @@
 			"default": ""
 		},
 		"persistent-workspaces": {
-			"*": 5
+			"*": 3
 		},
 		// "persistent-only":
 		// "show-special":
@@ -495,56 +495,6 @@
 		// "on-scroll-up":
 		// "on-scroll-down":
 		"cursor": true
-	},
-
-	"custom/theme_switcher": {
-		"exec": "~/.config/waybar/scripts/theme-switcher.sh",
-		// "exec-if":
-		// "exec-on-event":
-		// "hide-empty-text":
-		"return-type": "json",
-		// "interval":
-		// "restart-interval":
-		// "signal":
-		"format": "{}",
-		// "format-icons":
-		// "rotate":
-		"min-length": 4,
-		"max-length": 4,
-		"on-click": "~/.config/waybar/scripts/theme-switcher.sh next",
-		// "on-click-middle":
-		"on-click-right": "~/.config/waybar/scripts/theme-switcher.sh prev"
-		// "on-scroll-up":
-		// "on-scroll-down":
-		// "smooth-scrolling-threshold":
-		// "tooltip":
-		// "tooltip-format":
-		// "escape":
-	},
-
-	"custom/user": {
-		"exec": "id --user --name",
-		// "exec-if":
-		// "exec-on-event":
-		// "hide-empty-text":
-		// "return-type":
-		// "interval":
-		// "restart-interval":
-		// "signal":
-		"format": "{}",
-		// "format-icons":
-		// "rotate":
-		// "min-length":
-		// "max-length":
-		// "on-click":
-		// "on-click-middle":
-		// "on-click-right":
-		// "on-scroll-up":
-		// "on-scroll-down":
-		// "smooth-scrolling-threshold":
-		"tooltip": false
-		// "tooltip-format":
-		// "escape":
 	},
 
 	"custom/distro": {
