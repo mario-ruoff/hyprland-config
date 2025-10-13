@@ -85,6 +85,18 @@ if [[ $paired == 'no' ]]; then
 	fi
 fi
 
+# Trust the device (helps with auto-reconnect); continue even if this fails
+trusted=$(bluetoothctl info "$address" | grep Trusted | awk '{print $2}')
+
+if [[ $trusted == 'no' ]]; then
+	echo 'Trusting...'
+	if timeout $s bluetoothctl trust "$address" >/dev/null; then
+		notify-send 'Bluetooth' 'Device trusted'
+	else
+		notify-send 'Bluetooth' 'Failed to trust (continuing)'
+	fi
+fi
+
 echo 'Connecting...'
 
 if timeout $s bluetoothctl connect "$address" >/dev/null; then
